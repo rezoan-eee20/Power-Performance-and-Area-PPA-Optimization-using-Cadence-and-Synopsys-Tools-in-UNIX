@@ -1,0 +1,56 @@
+Loading db file '/synopsys/GPDK/SAED_EDK90nm/Digital_Standard_Cell_Library/synopsys/models/saed90nm_max.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : c17
+Version: F-2011.09-SP4
+Date   : Mon Mar  7 14:11:40 2022
+****************************************
+
+
+Library(s) Used:
+
+    saed90nm_max (File: /synopsys/GPDK/SAED_EDK90nm/Digital_Standard_Cell_Library/synopsys/models/saed90nm_max.db)
+
+
+Operating Conditions: WORST   Library: saed90nm_max
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+c17                    8000              saed90nm_max
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  84.0252 nW   (93%)
+  Net Switching Power  =   5.9617 nW    (7%)
+                         ---------
+Total Dynamic Power    =  89.9869 nW  (100%)
+
+Cell Leakage Power     =  77.2262 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  8.4025e-02        5.9617e-03        7.7226e+04            0.1672  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total          8.4025e-02 uW     5.9617e-03 uW     7.7226e+04 pW         0.1672 uW
+1
